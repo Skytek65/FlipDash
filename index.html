@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlipDash — Retro Split-Flap Display for Mac</title>
+  <meta name="description" content="Transform your Mac into a stunning retro split-flap display with live weather, stocks, news, quotes & time. Native macOS screensaver and menu bar app.">
+  <meta name="theme-color" content="#08080C">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FlipDash — Retro Split-Flap Display for Mac">
+  <meta property="og:description" content="Live weather, stocks, news, quotes & time — beautifully animated on a retro departure board. Native macOS screensaver.">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:image" content="images/og-image.png"> -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== Top Ticker Bar ====== -->
+<div class="top-bar" aria-hidden="true">
+  <div class="marquee">
+    <span><span class="dot">●</span> AAPL 198.42 ▲ +1.23%</span>
+    <span><span class="dot">●</span> NEW YORK  72°F  PARTLY CLOUDY</span>
+    <span><span class="dot">●</span> BREAKING NEWS: HEADLINES ROTATING LIVE</span>
+    <span><span class="dot">●</span> GOOGL 2841.05 ▲ +0.87%</span>
+    <span><span class="dot">●</span> LONDON  18°C  OVERCAST</span>
+    <span><span class="dot">●</span> "THE BEST TIME TO PLANT A TREE WAS 20 YEARS AGO" — PROVERB</span>
+    <span><span class="dot">●</span> TSLA 412.30 ▲ +2.15%</span>
+    <span><span class="dot">●</span> TOKYO  24°C  CLEAR SKY</span>
+    <!-- duplicate for seamless loop -->
+    <span><span class="dot">●</span> AAPL 198.42 ▲ +1.23%</span>
+    <span><span class="dot">●</span> NEW YORK  72°F  PARTLY CLOUDY</span>
+    <span><span class="dot">●</span> BREAKING NEWS: HEADLINES ROTATING LIVE</span>
+    <span><span class="dot">●</span> GOOGL 2841.05 ▲ +0.87%</span>
+    <span><span class="dot">●</span> LONDON  18°C  OVERCAST</span>
+    <span><span class="dot">●</span> "THE BEST TIME TO PLANT A TREE WAS 20 YEARS AGO" — PROVERB</span>
+    <span><span class="dot">●</span> TSLA 412.30 ▲ +2.15%</span>
+    <span><span class="dot">●</span> TOKYO  24°C  CLEAR SKY</span>
+  </div>
+</div>
+
+<!-- ====== Nav ====== -->
+<header class="container">
+  <nav class="site-nav">
+    <div class="logo">Flip<span class="accent">Dash</span></div>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#data-sources">Data</a>
+      <a href="#design">Design</a>
+      <a href="privacy.html">Privacy</a>
+      <!-- Replace # with your Mac App Store link -->
+      <a href="#download" class="btn btn-primary btn-sm" style="padding:8px 18px;font-size:13px;border-radius:8px;">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the Mac App Store
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- ====== Hero ====== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">✈ Now Available for macOS</div>
+
+    <!-- Split-flap title: FLIPDASH -->
+    <div class="flap-title" aria-label="FlipDash">
+      <span class="flap-char">F</span>
+      <span class="flap-char">L</span>
+      <span class="flap-char">I</span>
+      <span class="flap-char">P</span>
+      <span class="flap-char" style="color:var(--cyan);">D</span>
+      <span class="flap-char" style="color:var(--cyan);">A</span>
+      <span class="flap-char" style="color:var(--cyan);">S</span>
+      <span class="flap-char" style="color:var(--cyan);">H</span>
+    </div>
+
+    <p class="hero-sub">
+      Turn your Mac into a retro split-flap display with live weather, stocks, news, quotes &amp; time — as a native macOS screensaver and menu&nbsp;bar&nbsp;app.
+    </p>
+
+    <div class="cta-group">
+      <a href="#download" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download for Mac
+      </a>
+      <a href="#features" class="btn btn-outline">See Features ↓</a>
+    </div>
+
+    <!-- Hero screenshot — replace placeholder with your actual screenshot -->
+    <div class="hero-screenshot">
+      <!-- <img src="images/hero-screenshot.png" alt="FlipDash screensaver showing live weather on a split-flap board"> -->
+      <div class="screenshot-placeholder">[ Your hero screenshot here — images/hero-screenshot.png ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Data Sources (departure board style) ====== -->
+<section id="data-sources">
+  <div class="container">
+    <div class="section-label">Live Data Sources</div>
+    <h2 class="section-title">Five feeds. One beautiful board.</h2>
+    <p class="section-desc">
+      FlipDash cycles through real-time data — weather, stocks, news, quotes, and time — each rendered with authentic split-flap animation.
+    </p>
+
+    <div class="board">
+      <div class="board-header">
+        <span></span>
+        <span>Source</span>
+        <span>Details</span>
+        <span>Status</span>
+      </div>
+      <div class="board-row">
+        <span class="board-icon">🌤</span>
+        <span class="board-source">Weather</span>
+        <span class="board-detail">Temperature, conditions, wind, highs &amp; lows, 3-day forecast</span>
+        <span class="board-status status-live">● LIVE</span>
+      </div>
+      <div class="board-row">
+        <span class="board-icon">📈</span>
+        <span class="board-source">Stocks</span>
+        <span class="board-detail">Track up to 5 tickers — price, change, and percentage</span>
+        <span class="board-status status-live">● LIVE</span>
+      </div>
+      <div class="board-row">
+        <span class="board-icon">📰</span>
+        <span class="board-source">News</span>
+        <span class="board-detail">Top headlines from BBC News and The New York Times</span>
+        <span class="board-status status-live">● LIVE</span>
+      </div>
+      <div class="board-row">
+        <span class="board-icon">💬</span>
+        <span class="board-source">Quotes</span>
+        <span class="board-detail">Rotating inspirational quotes with author attribution</span>
+        <span class="board-status status-live">● LIVE</span>
+      </div>
+      <div class="board-row">
+        <span class="board-icon">🕐</span>
+        <span class="board-source">Time &amp; Date</span>
+        <span class="board-detail">Current time, day, date, year, and personalized greeting</span>
+        <span class="board-status status-live">● LIVE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Features ====== -->
+<section id="features">
+  <div class="container">
+    <div class="section-label">Features</div>
+    <h2 class="section-title">Engineered to feel real.</h2>
+    <p class="section-desc">
+      Every detail — from staggered tile timing to mechanical sound effects — is crafted to recreate the analog charm of a departure board.
+    </p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-cyan">🎬</div>
+        <h3>Authentic Split-Flap Animation</h3>
+        <p>Each tile flips through intermediate characters with staggered left-to-right, top-to-bottom timing — just like a real mechanical board.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">🖥</div>
+        <h3>Native macOS Screensaver</h3>
+        <p>Installs as a true macOS screensaver that activates when your Mac goes idle. All your settings sync automatically from the companion app.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-green">🔊</div>
+        <h3>Mechanical Sound Effects</h3>
+        <p>Authentic split-flap clacking sounds with adjustable volume. Hear every character flip into place — or silence it with a toggle.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-orange">🎨</div>
+        <h3>Colorful Flip Mode</h3>
+        <p>Toggle vibrant flashes of cyan, teal, purple, and orange as tiles flip through characters. A modern twist on a classic display.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-teal">📐</div>
+        <h3>Adaptive Grid Density</h3>
+        <p>Classic (22×5), Large (32×7), or Ultra Wide (44×9) — or let FlipDash automatically scale to your display. Ultra-wide layouts unlock multi-column data.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-yellow">⚡</div>
+        <h3>Lightweight Menu Bar App</h3>
+        <p>No Dock icon, no clutter. FlipDash lives quietly in your menu bar with quick access to settings, screensaver controls, and more.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Screensaver Section ====== -->
+<section id="design">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="section-label">Screensaver</div>
+        <h2 class="section-title">Your idle screen,<br>now alive.</h2>
+        <p class="section-desc" style="margin-bottom:24px;">
+          FlipDash installs a native macOS screensaver that transforms your idle display into a cycling departure board of live data. Weather at a glance. Stock prices ticking. Headlines flipping. All with that unmistakable mechanical rhythm.
+        </p>
+        <div class="accent-strip" aria-hidden="true">
+          <span style="background:var(--green);"></span>
+          <span style="background:var(--orange);"></span>
+          <span style="background:var(--purple);"></span>
+          <span style="background:var(--cyan);"></span>
+          <span style="background:var(--teal);"></span>
+        </div>
+        <ul style="list-style:none;padding:0;">
+          <li style="color:var(--text-dim);font-size:15px;margin-bottom:8px;padding-left:16px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--green);">✓</span> Settings sync automatically
+          </li>
+          <li style="color:var(--text-dim);font-size:15px;margin-bottom:8px;padding-left:16px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--green);">✓</span> GPU-accelerated rendering
+          </li>
+          <li style="color:var(--text-dim);font-size:15px;margin-bottom:8px;padding-left:16px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--green);">✓</span> Sound auto-muted in screensaver
+          </li>
+          <li style="color:var(--text-dim);font-size:15px;padding-left:16px;position:relative;">
+            <span style="position:absolute;left:0;color:var(--green);">✓</span> One-click install during setup
+          </li>
+        </ul>
+      </div>
+      <div class="split-visual">
+        <!-- <img src="images/screensaver.png" alt="FlipDash screensaver in action"> -->
+        <div class="screenshot-placeholder">[ Screensaver screenshot — images/screensaver.png ]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Customization ====== -->
+<section>
+  <div class="container">
+    <div class="split" style="direction:rtl;">
+      <div style="direction:ltr;">
+        <div class="section-label">Customize</div>
+        <h2 class="section-title">Your board,<br>your rules.</h2>
+        <p class="section-desc" style="margin-bottom:24px;">
+          Enable or disable any data source. Pick your stock tickers. Set your city or let FlipDash detect it. Adjust rotation speed from 5 to 60 seconds. Toggle sounds, colors, and density — everything syncs instantly to the screensaver.
+        </p>
+        <div class="accent-strip" aria-hidden="true">
+          <span style="background:var(--cyan);"></span>
+          <span style="background:var(--teal);"></span>
+          <span style="background:var(--green);"></span>
+          <span style="background:var(--orange);"></span>
+          <span style="background:var(--purple);"></span>
+        </div>
+      </div>
+      <div class="split-visual" style="direction:ltr;">
+        <!-- <img src="images/settings.png" alt="FlipDash settings window"> -->
+        <div class="screenshot-placeholder">[ Settings screenshot — images/settings.png ]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Stats ====== -->
+<section>
+  <div class="container">
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-value">5</div>
+        <div class="stat-label">Live Data Sources</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">396</div>
+        <div class="stat-label">Max Tiles (Ultra Wide)</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">24</div>
+        <div class="stat-label">FPS Animation</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">0</div>
+        <div class="stat-label">Data Collected</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Privacy Callout ====== -->
+<section>
+  <div class="container">
+    <div style="text-align:center; max-width:640px; margin:0 auto;">
+      <div class="section-label" style="text-align:center;">Privacy First</div>
+      <h2 class="section-title" style="text-align:center;">Zero tracking.<br>Zero analytics.</h2>
+      <p class="section-desc" style="text-align:center; margin:0 auto;">
+        FlipDash is fully sandboxed. No user accounts. No data collection. Location is used only for weather and never leaves your Mac. All API keys are server-side. Your data stays yours.
+      </p>
+      <p style="margin-top:20px;">
+        <a href="privacy.html" style="font-size:14px;color:var(--cyan);">Read our Privacy Policy →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Final CTA ====== -->
+<section class="cta-banner" id="download">
+  <div class="container">
+    <div class="flip-demo" aria-hidden="true">
+      <span class="flap-char" style="color:var(--green);">D</span>
+      <span class="flap-char" style="color:var(--green);">O</span>
+      <span class="flap-char" style="color:var(--green);">W</span>
+      <span class="flap-char" style="color:var(--green);">N</span>
+      <span class="flap-char" style="color:var(--green);">L</span>
+      <span class="flap-char" style="color:var(--green);">O</span>
+      <span class="flap-char" style="color:var(--green);">A</span>
+      <span class="flap-char" style="color:var(--green);">D</span>
+      <span class="flap-char space"></span>
+      <span class="flap-char" style="color:var(--cyan);">N</span>
+      <span class="flap-char" style="color:var(--cyan);">O</span>
+      <span class="flap-char" style="color:var(--cyan);">W</span>
+    </div>
+
+    <h2 class="section-title">Ready for departure.</h2>
+    <p class="section-desc">
+      Transform your Mac into a retro split-flap display. Download FlipDash from the Mac App Store.
+    </p>
+    <div class="cta-group">
+      <!-- Replace # with your Mac App Store link -->
+      <a href="#" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the Mac App Store
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== Footer ====== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 Skytek. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <!-- Add your support URL below -->
+        <a href="mailto:support@skytek.com">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

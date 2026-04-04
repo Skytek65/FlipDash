@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — FlipDash</title>
+  <meta name="description" content="FlipDash privacy policy. We do not collect, store, or transmit any personal data.">
+  <meta name="theme-color" content="#08080C">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ====== Nav ====== -->
+<header class="container">
+  <nav class="site-nav">
+    <a href="index.html" class="logo">Flip<span class="accent">Dash</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#features">Features</a>
+      <a href="privacy.html" style="color:var(--text);">Privacy</a>
+    </div>
+  </nav>
+</header>
+
+<!-- ====== Page Header ====== -->
+<div class="container">
+  <div class="page-header">
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: April 4, 2026</p>
+  </div>
+</div>
+
+<!-- ====== Content ====== -->
+<div class="container">
+  <div class="prose">
+
+    <h2>Overview</h2>
+    <p>
+      FlipDash ("the App") is developed by Skytek. We are committed to protecting your privacy. This policy explains what data the App accesses, how it is used, and what is shared with third parties.
+    </p>
+    <p>
+      <strong>In short: FlipDash does not collect, store, or transmit any personal data to our servers. We have no analytics, no advertising, and no tracking of any kind.</strong>
+    </p>
+
+    <h2>Data We Do Not Collect</h2>
+    <p>FlipDash does not collect or store:</p>
+    <ul>
+      <li>Personal identifiers (name, email, phone number)</li>
+      <li>Device identifiers or fingerprints</li>
+      <li>Usage or interaction analytics</li>
+      <li>Crash reports or diagnostics</li>
+      <li>Advertising or tracking data</li>
+      <li>Account credentials (no accounts exist)</li>
+    </ul>
+
+    <h2>Location Data</h2>
+    <p>
+      FlipDash requests access to your approximate location (city-level, ~1 km precision) solely to display relevant local weather conditions on the split-flap board.
+    </p>
+    <ul>
+      <li>Location data is processed entirely on your device</li>
+      <li>Your coordinates are sent only to the Open-Meteo weather API to fetch weather data</li>
+      <li>Location data is never stored persistently, transmitted to our servers, or shared with any other party</li>
+      <li>You can disable location access at any time in System Settings, or manually set your city within the App</li>
+      <li>If location access is denied, FlipDash falls back to IP-based geolocation using ipapi.co or ipwho.is, which estimates your city from your public IP address</li>
+    </ul>
+
+    <h2>Network Requests</h2>
+    <p>
+      FlipDash makes outbound network requests to the following third-party services to retrieve publicly available data. No personal information is included in these requests beyond what is noted.
+    </p>
+    <ul>
+      <li><strong>Open-Meteo</strong> (api.open-meteo.com) — Weather data. Receives latitude and longitude coordinates.</li>
+      <li><strong>Open-Meteo Geocoding</strong> (geocoding-api.open-meteo.com) — City name search. Receives the city name you type.</li>
+      <li><strong>Finnhub</strong> (via flipdash-stock-proxy.skytekappledev.workers.dev) — Stock quotes. Receives only ticker symbols. API keys are kept server-side on our proxy; no credentials are stored on your device.</li>
+      <li><strong>BBC News</strong> (feeds.bbci.co.uk) — RSS news headlines. No user data sent.</li>
+      <li><strong>The New York Times</strong> (rss.nytimes.com) — RSS news headlines. No user data sent.</li>
+      <li><strong>ZenQuotes</strong> (zenquotes.io) — Inspirational quotes. No user data sent.</li>
+      <li><strong>ipapi.co / ipwho.is</strong> — IP-based geolocation fallback. These services may see your public IP address, which is standard for any internet request.</li>
+    </ul>
+
+    <h2>Local Storage</h2>
+    <p>
+      FlipDash stores your preferences (enabled data sources, stock tickers, weather location, display settings, sound preferences) locally on your Mac using UserDefaults. This data never leaves your device and is not accessible to us or any third party.
+    </p>
+    <p>
+      A shared UserDefaults suite is used to synchronize settings between the FlipDash companion app and the FlipDash screensaver, both of which run locally on your Mac.
+    </p>
+
+    <h2>App Sandbox</h2>
+    <p>
+      FlipDash runs within Apple's App Sandbox with only the following entitlements:
+    </p>
+    <ul>
+      <li><strong>Outbound network access</strong> — to fetch weather, stock, news, and quote data</li>
+      <li><strong>Location services</strong> — to determine your city for weather (optional)</li>
+    </ul>
+    <p>
+      The App cannot access your files, contacts, calendar, photos, microphone, camera, or any other personal data.
+    </p>
+
+    <h2>Screensaver</h2>
+    <p>
+      FlipDash includes a native macOS screensaver component (.saver bundle) that is installed via the standard macOS screensaver installation dialog. The screensaver reads shared settings from UserDefaults and makes the same network requests described above to display live data. It does not collect any additional data.
+    </p>
+    <p>
+      The screensaver validates its Mac App Store receipt locally to confirm a legitimate purchase. This validation is performed entirely on-device and does not contact any external server.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      FlipDash is rated 4+ and does not knowingly collect any information from children or any other users. The App contains no objectionable content, no in-app purchases, and no advertising.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The third-party APIs listed above have their own privacy policies. FlipDash does not control how these services handle network requests. We encourage you to review their policies:
+    </p>
+    <ul>
+      <li><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo Terms</a></li>
+      <li><a href="https://finnhub.io/terms-of-service" target="_blank" rel="noopener">Finnhub Terms of Service</a></li>
+      <li><a href="https://zenquotes.io/terms" target="_blank" rel="noopener">ZenQuotes Terms</a></li>
+    </ul>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. Continued use of the App after changes constitutes acceptance of the revised policy.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, please contact us at:
+    </p>
+    <p>
+      <!-- Replace with your actual contact email -->
+      <a href="mailto:support@skytek.com">support@skytek.com</a>
+    </p>
+
+  </div>
+</div>
+
+<!-- ====== Footer ====== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-copy">© 2026 Skytek. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:support@skytek.com">Support</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
