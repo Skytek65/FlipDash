@@ -129,11 +129,7 @@
 
     <h2>Contact</h2>
     <p>
-      If you have questions about this Privacy Policy, please contact us at:
-    </p>
-    <p>
-      <!-- Replace with your actual contact email -->
-      <a href="mailto:support@skytek.com">support@skytek.com</a>
+      If you have questions about this Privacy Policy, please contact us via the feedback widget on our homepage.
     </p>
 
   </div>
@@ -146,11 +142,24 @@
       <div class="footer-copy">© 2026 Skytek. All rights reserved.</div>
       <div class="footer-links">
         <a href="privacy.html">Privacy Policy</a>
-        <a href="mailto:support@skytek.com">Support</a>
       </div>
     </div>
   </div>
 </footer>
 
+<script type="text/javascript">
+    window.doorbellOptions = {
+        "id": "14679",
+        "appKey": "h3DoKgrJiIfwWoEUzotevNgvV6VljNT7G2W1P3FzHYqv9N8RBygwTGoxZ9gQVYta"
+    };
+    (function(w, d, t) {
+        var hasLoaded = false;
+        function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.crossorigin = 'anonymous';g.async = true;g.src = 'https://embed.doorbell.io/button/'+window.doorbellOptions['id']+'?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+        if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+        if (d.readyState == 'complete') { l(); }
+    }(window, document, 'script'));
+</script>
+
 </body>
 </html>
+
